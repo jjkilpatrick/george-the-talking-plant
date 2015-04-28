@@ -1,0 +1,3 @@
+# Arduino Plant Sensor #
+
+Source code for the Plant Sensor project. The app reads data from the temperature, humidity, light and soil moisture sensors with an Arduino micro controller. Arduino code is written in C++. The node js server script then reads the sensor data coming from the USB and broadcasts it in a JSON object using socket.io. Interpreting the sensor data happens on the front-end using standard HTML, CSS and Javascript. 
