@@ -135,6 +135,10 @@ plant = {
 			"I was watered ",
 			"You watered me "
 		],
+		hate: [
+			"I hate you more",
+			"I hate you too"
+		],
 		normal: [
 			"It's ",
 			"The temperature is "
@@ -182,10 +186,10 @@ app = {
 	moisture: 999,
 	previousQuestion: "",
 
-	temp_min: 21,
+	temp_min: 18,
 	temp_max: 26,
 	light_min: 30,
-	moist_min: 60,
+	moist_min: 66,
 	
 	speak: function(message, interrupt){
 
@@ -315,6 +319,16 @@ app = {
 				)){
 					app.answer(
 						plant.answer.age[app.rdm(2)]
+					);
+				}
+
+				// Hate
+				if(app.matchWords(
+					["hate", "dislike"],
+					text
+				)){
+					app.answer(
+						plant.answer.hate[app.rdm(2)]
 					);
 				}
 

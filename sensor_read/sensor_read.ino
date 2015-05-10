@@ -209,7 +209,7 @@ void loop(){
     draw(dying);
   } else if(soil_val > 75) {
     draw(over);
-  } else if(light_val >= 30 && soil_val >= 60 && celsius >= 21 && celsius <= 26) {
+  } else if(light_val >= 30 && soil_val >= 66 && celsius >= 18 && celsius <= 26) {
     if(motion1_val == 1 && motion2_val == 0) {
       draw(happyL);
     } else if(motion1_val == 0 && motion2_val == 1) {

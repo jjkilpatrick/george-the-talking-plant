@@ -27,7 +27,7 @@ var key = fs.readFileSync('key.pem'),
 // Server settings
 var	PORT = 8000,
 	HOST = 'localhost',
-	USB  = '/dev/tty.usbmodem1421';
+	USB  = '/dev/tty.usbmodem1411';
 
 //
 // Start HTTPS server with socket.io
